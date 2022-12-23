@@ -1,0 +1,20 @@
+@import '../../style/variables.scss';
+
+.footer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 180px 20px;
+
+    .menu {
+        margin-bottom: 30px;
+    }
+
+    .menu__list {
+        justify-content: center;
+    }
+
+    .menu__link {
+        color: $black;
+    }
+}

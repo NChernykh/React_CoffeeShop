@@ -1,0 +1,26 @@
+@import '../../style/variables.scss';
+
+.about {
+    margin: 0 auto;
+    width: 590px;
+    text-align: center;
+    padding-bottom: 100px;
+
+    .title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .decoration {
+        margin-bottom: 40px;
+
+        &::before,
+        &::after {
+            background-color: $black;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,10 @@
+@import '../../style/variables.scss';
+
+.header {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 180px;
+    padding-top: 52px;
+    z-index: 5;
+}

@@ -1,0 +1,39 @@
+@import '../../style/variables.scss';
+
+.intro {
+    position: relative;
+    top: -70px;
+    padding: 180px 0 200px;
+    background-image: url(../../resources/content/main-bg.jpg);
+    background-size: cover;
+    text-align: center;
+    color: $white;
+
+    .title {
+        font-size: 40px;
+        line-height: 140%;
+        margin-bottom: 10px;
+    }
+
+    .decoration {
+        margin-bottom: 30px;
+        &::before,
+        &::after {
+            background-color: $white;
+        }
+    }
+
+    &__text {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    &__button {
+        font-size: 14px;
+        line-height: 120%;
+        border: 1px solid $white;
+        padding: 5px;
+        min-width: 120px;
+    }
+}

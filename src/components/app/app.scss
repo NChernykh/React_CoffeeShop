@@ -1,0 +1,35 @@
+@import '../../style/variables.scss';
+
+.app {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .decoration {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: $black;;
+        top: 15px;
+    }
+
+    &::before {
+        left: 30px;
+    }
+
+    &::after {
+        right: 30px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../style/variables.scss';
+
+.filter-list {
+    .card {
+        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+        background-color: $white;
+    }
+}
+
+.coffee-list {
+    max-width: 1440px;
+    padding: 0 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

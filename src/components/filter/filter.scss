@@ -1,0 +1,30 @@
+@import '../../style/variables.scss';
+
+.filter-form {
+    display: flex;
+
+    &__buttons {
+        margin-left: 35px;
+    }
+
+    .btn {
+        margin-right: 5px;
+        padding: 7px 20px 5px;
+        background: $white;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+        border-width: 0;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover,
+        &:active,
+        &:focus,
+        &__active {
+            filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+        }
+    }
+}

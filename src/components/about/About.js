@@ -3,7 +3,7 @@ import blackBeans from '../../resources/svg/black-beans.svg';
 
 const About = () => {
     return (
-        <div className="about">
+        <section className="about">
             <h2 className='title'>About Us</h2>
             <span className='decoration'>
             <img src={blackBeans} alt="Coffee Beans"/>
@@ -19,7 +19,7 @@ const About = () => {
                 horrible but confined day end marriage. Eagerness furniture set preserved far
                 recommend. Did even but nor are most gave hope. Secure active living depend son
                 repair day ladies now.</p>
-        </div>
+        </section>
     )
 }
 

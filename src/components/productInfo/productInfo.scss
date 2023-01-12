@@ -1,0 +1,33 @@
+.product {
+    max-width: 500px;
+    text-align: center;
+
+    &__img {
+        width: 392px;
+        height: 355px;
+    }
+
+    .title {
+        margin-bottom: 30px;
+    }
+
+    .decoration {
+        margin-bottom: 20px;
+    }
+
+    &__info {
+        text-align: left;
+    }
+
+    &__row {
+        margin-bottom: 15px;
+    }
+
+    strong {
+        margin-right: 10px;
+    }
+
+    .bold {
+        font-size: 30px;
+    }
+}

@@ -8,12 +8,14 @@ import data from '../data/data';
 import CoffeeList from '../coffeeList/CoffeeList';
 import Search from '../search/Search';
 import Filter from '../filter/Filter';
+import ProductInfo from '../productInfo/ProductInfo';
 
 class App extends Component {
 
   state = {
     term: '',
-    filter: 'Kenia'
+    filter: '',
+    selectedItem: null
   }
 
   bestData = (items) => {
@@ -49,12 +51,18 @@ class App extends Component {
 
   onFilterSelect = (filter) => {
     this.setState({
-      filter: filter
+      filter: filter 
     })
   }
+
+  onItemSelected = (id) => {
+    this.setState({
+        selectedItem: id
+    })
+}
   
   render() {
-    const {term, filter} = this.state;
+    const {term, filter, selectedItem} = this.state;
     const bestData = this.bestData(data);
     const visibleData = this.filterPost(this.searchItem(data, term), filter);
 
@@ -76,8 +84,9 @@ class App extends Component {
               filter={filter}
               onFilterSelect={this.onFilterSelect}/>  
           </section>  
-          <section className='filter-list'>
-              <CoffeeList data={visibleData}/>
+          <section className='products'>
+              <CoffeeList data={visibleData} onItemSelected={this.onItemSelected}/>
+              <ProductInfo selectedId={selectedItem}/>
           </section>
         </main>
         <AppFooter/>

@@ -1,12 +1,19 @@
 import './coffeeList.scss';
-import Card from '../card/Card';
-
-const CoffeeList = ({data}) => {
+const CoffeeList = ({data, onItemSelected}) => {
 
     const elements = data.map(item =>  {
-        const {id, ...itemProps} = item;
         return (
-            <Card key={id} {...itemProps} />
+            <li className='card'
+                key={item.id}
+                onClick={() => onItemSelected(item.id)}
+                tabIndex={0}>
+                <div className="card__info">
+                    <img src={item.src} alt="two pack of Coffee" />
+                    <h3 className='card__title'>{item.name} {item.weight}kg</h3>
+                    <p className='card__country'>{item.country}</p>
+                    <p className='card__price'>{item.price}$</p>
+                </div>
+            </li>
         )
     })
 

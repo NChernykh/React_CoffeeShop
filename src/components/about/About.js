@@ -6,7 +6,7 @@ const About = () => {
         <section className="about">
             <h2 className='title'>About Us</h2>
             <span className='decoration'>
-            <img src={blackBeans} alt="Coffee Beans"/>
+                <img src={blackBeans} alt="Coffee Beans"/>
             </span>
             <p className='about__text'>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
                 Afraid at highly months do things on at. Situation recommend objection do intention
